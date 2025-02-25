@@ -1,0 +1,240 @@
+/*----------------------SMARTPHONES----------------------------*/
+
+@media only screen and (max-width: 560px) {
+    /* ------------------------------------------------------
+    Basic Setup
+    ------------------------------------------------------ */
+    html,
+    body {
+        font-size: 18px;
+    }
+
+    /*--------------------------------------------------*/
+    /*---------------------HEADER-----------------------*/
+    /*--------------------------------------------------*/
+
+    /* hamburger menu */
+
+    .display-logo {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 1rem;
+        width: 35px;
+    }
+
+    nav {
+        background-color: #55524f;
+    }
+
+    .navlist {
+        background-color: #55524f;
+        margin: 0;
+        height: 100vh;
+        padding: 10px 4px 0px 4px;
+        width: 100%;
+        z-index: 1;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: start;
+        transition: transform 0.5s ease-in;
+    }
+
+    .navlist li {
+        text-align: left;
+        opacity: 0;
+    }
+
+    .nav-container {
+        height: 0;
+    }
+
+    .active {
+        width: 100%;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    /*--------------------------------------------------*/
+    /*---------------------COACHES----------------------*/
+    /*--------------------------------------------------*/
+
+    .pic-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*--------------------------------------------------*/
+    /*---------------------REVIEWS----------------------*/
+    /*--------------------------------------------------*/
+
+    .fas.fa-chevron-right,
+    .fas.fa-chevron-left {
+        display: none;
+    }
+
+    .carousel {
+        height: 280px;
+    }
+
+    .carousel__track-container {
+        width: 110%;
+        height: 250px;
+    }
+
+    .carousel__track {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel__slide {
+        width: 100%;
+    }
+
+    .carousel__image {
+        width: 100%;
+    }
+
+    blockquote {
+        font-size: 110%;
+    }
+
+    blockquote::before {
+        content: open-quote;
+        font-size: 35px;
+    }
+
+    blockquote::after {
+        content: close-quote;
+        font-size: 35px;
+    }
+
+    .social-media {
+        margin: 0;
+        padding: 30px 0 20px 0;
+    }
+
+    .modalform {
+        width: 95%;
+        height: 95%;
+        padding: 15px;
+    }
+
+    /*--------------------------------------------------*/
+    /*---------------------FOOTER-----------------------*/
+    /*--------------------------------------------------*/
+
+    .footer-container {
+        justify-content: flex-start;
+    }
+}
+
+/*----------------------iPads/Tablets---------------------------*/
+
+@media only screen and (width: 768px) {
+    /* ------------------------------------------------------
+    Basic Setup
+    ------------------------------------------------------ */
+    html,
+    body {
+        font-size: 20px;
+    }
+
+    /*--------------------------------------------------*/
+    /*---------------------HEADER-----------------------*/
+    /*--------------------------------------------------*/
+
+    .subscription-box {
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        text-align: center;
+    }
+
+    .subscription-form {
+        width: 600px;
+    }
+
+    /*--------------------------------------------------*/
+    /*---------------------REVIEWS----------------------*/
+    /*--------------------------------------------------*/
+
+    .carousel {
+        height: 460px;
+    }
+
+    .carousel__track-container {
+        width: 110%;
+        height: 460px;
+    }
+
+    .carousel__track {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel__slide {
+        width: 100%;
+    }
+
+    .carousel__image {
+        width: 100%;
+    }
+
+    .carousel__button--left {
+        left: -80px;
+    }
+
+    .carousel__button--right {
+        right: -120px;
+    }
+
+    blockquote {
+        font-size: 110%;
+    }
+
+    blockquote::before {
+        content: open-quote;
+        font-size: 35px;
+    }
+
+    blockquote::after {
+        content: close-quote;
+        font-size: 35px;
+    }
+
+    .modalform {
+        width: 80%;
+    }
+}
